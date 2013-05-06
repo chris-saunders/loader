@@ -1,5 +1,5 @@
 define([
-  "views/LoadingView"
+  "scripts/views/LoadingView"
 ], function(LoadingView) {
 
   describe("Component | Loading - View", function() {
