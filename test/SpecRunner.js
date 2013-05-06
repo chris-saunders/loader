@@ -1,13 +1,13 @@
 require.config({
-  baseUrl: '../scripts/',
+  baseUrl: '../scripts',
   urlArgs: 'cb=' + Math.random(),
   paths: {
-    jquery: 'lib/jquery/jquery',
-    lodash: 'lib/lodash/lodash',
-    handlebars: 'lib/handlebars/handlebars',
-    backbone: 'lib/backbone/backbone',
-    spec: 'spec',
-    src: 'src'
+    jquery: 'vendor/jquery/jquery',
+    lodash: 'vendor/lodash/lodash',
+    handlebars: 'vendor/handlebars/handlebars',
+    backbone: 'vendor/backbone/backbone',
+    spec: '../test/spec',
+    src: '../test/src',
   },
   shim: {
 	  lodash: {
