@@ -4,7 +4,7 @@ define([
 	'handlebars',
 	'backbone',
 	'text!scripts/templates/loadertpl'
-], function($, _, Handlebars, Backbone, LoadingTpl) {
+], function($, _, Handlebars, Backbone, LoaderTpl) {
 	return Backbone.View.extend({
 
 		className: "loader",
@@ -30,7 +30,7 @@ define([
 		},
 
 		render: function() {
-			this.$el.html( Handlebars.compile(LoadingTpl) );
+			this.$el.html( Handlebars.compile(LoaderTpl) );
 			return this;
 		},
 
