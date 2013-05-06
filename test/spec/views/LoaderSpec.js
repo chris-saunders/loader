@@ -1,10 +1,10 @@
 define([
-  "scripts/views/LoadingView"
-], function(LoadingView) {
+  "scripts/views/LoaderView"
+], function(LoaderView) {
 
-  describe("Component | Loading - View", function() {
+  describe("Component | Loader - View", function() {
 
-    var loadingView,
+    var loaderView,
         testModel;
 
     beforeEach(function() {
@@ -12,41 +12,41 @@ define([
       testModel = Backbone.Model.extend({
         url: 'src/songs.json'
       });
-      loadingView = new LoadingView({ model: new testModel() }).render();
+      loaderView = new LoaderView({ model: new testModel() }).render();
     });
 
     afterEach(function() {
-      loadingView.remove();
+      loaderView.remove();
       $('.wrapper').remove();
     });
 
     it("should be tied to a DOM element when created, based off the property provided", function() {
-      expect(loadingView.el.tagName.toLowerCase()).toBe('div');
+      expect(loaderView.el.tagName.toLowerCase()).toBe('div');
     });
 
     // it("should have a class of 'wrapper'", function() {
-    //   expect(loadingView.el).toHaveClass('wrapper');
+    //   expect(loaderView.el).toHaveClass('wrapper');
     // });
 
     // it("is backed by a model instance", function() {
-    //   expect(loadingView.model).toBeDefined();
-    //   expect(loadingView.model.get('artist')).toBe('Artist');
+    //   expect(loaderView.model).toBeDefined();
+    //   expect(loaderView.model.get('artist')).toBe('Artist');
     // });
 
     // it("should render the Home Template properly", function() {
-    //   loadingView.render();
-    //   expect(loadingView.$('h1'))
+    //   loaderView.render();
+    //   expect(loaderView.$('h1'))
     //     .toHaveText('Welcome to Nukebox');
     // });
 
     // it("should invoke player properly", function() {
-    //   loadingView.render();
-    //   expect(loadingView.$('.player')).toBeVisible();
+    //   loaderView.render();
+    //   expect(loaderView.$('.player')).toBeVisible();
     // });
 
     // it("should invoke search properly", function() {
-    //   loadingView.render();
-    //   expect(loadingView.$('.search')).toBeVisible();
+    //   loaderView.render();
+    //   expect(loaderView.$('.search')).toBeVisible();
     // });
 
   });

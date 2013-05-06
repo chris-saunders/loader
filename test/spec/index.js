@@ -1,7 +1,7 @@
 define(function() {
   return {
     specs: [
-      'spec/views/LoadingSpec'
+      'spec/views/LoaderSpec'
     ]
   };
 });

@@ -6,7 +6,6 @@ require.config({
     lodash: 'vendor/lodash/lodash',
     handlebars: 'vendor/handlebars/handlebars',
     backbone: 'vendor/backbone/backbone',
-    loader: 'scripts',
     spec: 'test/spec',
     src: 'test/src',
   },
