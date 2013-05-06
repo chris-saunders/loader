@@ -3,7 +3,7 @@ define([
 	'lodash',
 	'handlebars',
 	'backbone',
-	'text!scripts/templates/loadertpl'
+	'text!components/loader/scripts/templates/loadertpl.js'
 ], function($, _, Handlebars, Backbone, LoaderTpl) {
 	return Backbone.View.extend({
 
