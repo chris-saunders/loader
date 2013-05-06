@@ -10,7 +10,7 @@ define([
     beforeEach(function() {
       $('body').append('<div class="wrapper"></div>');
       testModel = Backbone.Model.extend({
-        url: '../test/src/songs.json'
+        url: 'src/songs.json'
       });
       loadingView = new LoadingView({ model: new testModel() }).render();
     });
