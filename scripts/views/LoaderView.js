@@ -21,7 +21,7 @@ define([
 	            }
 	        })
 			.success(function(model, response, options) {
-				if (self.options.finished) { self.options.finished(model); }
+				if (self.options.finished) { self.options.finished(new Backbone.Collection(model)); }
 				return true;
 			})
 			.error(function(collection, response, options) {
